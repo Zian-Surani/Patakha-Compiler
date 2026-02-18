@@ -1,0 +1,13 @@
+kaam decimal avg(decimal a, decimal b) {
+    nikal decimal((a + b) / 2.0)
+}
+
+kaam bhai clamp_to_int(decimal v) {
+    agar (v < 0.0) {
+        nikal 0
+    }
+    nikal bhai(v)
+}
+
+shuru
+bass

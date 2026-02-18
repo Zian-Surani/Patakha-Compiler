@@ -1,0 +1,6 @@
+shuru
+bhai i=5;
+jabtak(i=0;i<=5;i=(i+1)){
+bol("hi");
+}
+bass

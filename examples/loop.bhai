@@ -1,0 +1,18 @@
+shuru
+bhai i = 0;
+bhai sum = 0;
+jabtak (i = 0; (i < 8); i = (i + 1)) {
+    agar ((i == 3)) {
+        jari;
+    }
+    sum = (sum + i);
+    agar ((sum > 20)) {
+        tod;
+    }
+}
+kar {
+    sum = (sum - 1);
+} tabtak ((sum > 10));
+bol(sum);
+nikal 0;
+bass

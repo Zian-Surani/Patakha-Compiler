@@ -1,0 +1,15 @@
+shuru
+bhai i = 0
+bhai sum = 0
+
+jabtak (i = 0; i < 6; i++) {
+    sum += i
+}
+
+kar {
+    --sum
+} tabtak (sum > 10)
+
+bol(sum)
+nikal 0
+bass

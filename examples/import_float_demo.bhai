@@ -1,0 +1,11 @@
+import "lib_math.bhai"
+
+shuru
+decimal x = 9.0;
+decimal y = 4.0;
+decimal m = avg(x, y);
+bhai z = clamp_to_int(m);
+bol(m);
+bol(z);
+nikal 0;
+bass

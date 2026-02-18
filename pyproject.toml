@@ -1,0 +1,10 @@
+[project]
+name = "patakha"
+version = "0.1.0"
+description = "Patakha compiler with C and stack backends"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+patakha = "patakha.cli:main"
+patakha-studio = "patakha.studio:main"

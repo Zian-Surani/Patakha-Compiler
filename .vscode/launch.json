@@ -1,0 +1,66 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Patakha: Run active .bhai (compile + execute)",
+      "type": "python",
+      "request": "launch",
+      "module": "patakha.vscode_runner",
+      "args": [
+        "${file}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Patakha: Open Studio GUI",
+      "type": "python",
+      "request": "launch",
+      "module": "patakha.studio",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Patakha: Open REPL",
+      "type": "python",
+      "request": "launch",
+      "module": "patakha",
+      "args": [
+        "repl"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Patakha: Lint active .bhai",
+      "type": "python",
+      "request": "launch",
+      "module": "patakha",
+      "args": [
+        "lint",
+        "${file}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Patakha: Format active .bhai",
+      "type": "python",
+      "request": "launch",
+      "module": "patakha",
+      "args": [
+        "fmt",
+        "${file}",
+        "-w"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

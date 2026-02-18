@@ -1,0 +1,66 @@
+{
+  "Program Skeleton": {
+    "prefix": "bhprog",
+    "body": [
+      "shuru",
+      "$1",
+      "nikal 0;",
+      "bass"
+    ],
+    "description": "Create a basic Patakha program skeleton"
+  },
+  "Import Module": {
+    "prefix": "bhimport",
+    "body": [
+      "import \"$1\""
+    ],
+    "description": "Import another Patakha module"
+  },
+  "If Else": {
+    "prefix": "bhif",
+    "body": [
+      "agar ($1) {",
+      "    $2",
+      "} warna {",
+      "    $3",
+      "}"
+    ],
+    "description": "Insert agar/warna block"
+  },
+  "While Loop": {
+    "prefix": "bhwhile",
+    "body": [
+      "tabtak ($1) {",
+      "    $2",
+      "}"
+    ],
+    "description": "Insert tabtak while-loop"
+  },
+  "For Loop": {
+    "prefix": "bhfor",
+    "body": [
+      "jabtak ($1; $2; $3) {",
+      "    $4",
+      "}"
+    ],
+    "description": "Insert jabtak for-loop"
+  },
+  "Function": {
+    "prefix": "bhfn",
+    "body": [
+      "kaam khali $1($2) {",
+      "    $3",
+      "}"
+    ],
+    "description": "Insert Patakha function"
+  },
+  "Decimal Function": {
+    "prefix": "bhfndec",
+    "body": [
+      "kaam decimal $1(decimal $2) {",
+      "    nikal $3",
+      "}"
+    ],
+    "description": "Insert decimal-returning function"
+  }
+}

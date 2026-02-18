@@ -1,0 +1,10 @@
+kaam bhai add(bhai a, bhai b) {
+    bhai x = (a + b);
+    nikal x;
+}
+
+shuru
+bhai v = add(4, 5);
+bol(v);
+nikal 0;
+bass

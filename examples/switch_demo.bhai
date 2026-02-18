@@ -1,0 +1,14 @@
+shuru
+bhai x = 2;
+switch (x) {
+    case 1:
+        bol("one");
+        tod;
+    case 2:
+        bol("two");
+        tod;
+    default:
+        bol("other");
+}
+nikal 0;
+bass

@@ -1,0 +1,28 @@
+struct User {
+    bhai age;
+    text name;
+};
+
+kaam bhai add(bhai a, bhai b) {
+    nikal max(a, b);
+}
+
+shuru
+bhai arr[3];
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30;
+User u;
+u.age = add(arr[0], arr[1]);
+u.name = "Patakha";
+agar ((u.age > 20)) {
+    bol("Full rich vibes");
+}
+warna {
+    bol("Budget tight");
+}
+bol(u.age);
+bol(u.name);
+bol(len(arr));
+nikal 0;
+bass

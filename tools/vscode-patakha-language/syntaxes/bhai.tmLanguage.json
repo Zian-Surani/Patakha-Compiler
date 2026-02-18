@@ -1,0 +1,123 @@
+{
+  "name": "Patakha",
+  "scopeName": "source.bhai",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#booleans"
+    },
+    {
+      "include": "#builtins"
+    },
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#function-def"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.bhai",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.bhai",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.bhai",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.bhai",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.integer.bhai",
+          "match": "\\b\\d+(?:\\.\\d+)?\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.bhai",
+          "match": "\\b(import|laao|shuru|bass|start_bhai|bas_kar|agar|warna|jabtak|tabtak|while|for|kar|do|switch|case|default|tod|break|jari|continue|nikal)\\b"
+        },
+        {
+          "name": "keyword.other.bhai",
+          "match": "\\b(bol|kaam|struct|kaksha|class)\\b"
+        }
+      ]
+    },
+    "booleans": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.bhai",
+          "match": "\\b(sach|jhooth)\\b"
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "name": "support.function.bhai",
+          "match": "\\b(max|len|bata|input)\\s*(?=\\()"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "storage.type.bhai",
+          "match": "\\b(bhai|decimal|float|bool|text|khali|void)\\b"
+        }
+      ]
+    },
+    "function-def": {
+      "patterns": [
+        {
+          "name": "entity.name.function.bhai",
+          "match": "\\bkaam\\s+(?:bhai|decimal|float|bool|text|khali|void|[A-Za-z_][A-Za-z0-9_]*)\\s+([A-Za-z_][A-Za-z0-9_]*)\\s*\\("
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.bhai",
+          "match": "\\+\\+|--|\\+=|-=|\\*=|/=|%=|==|!=|<=|>=|&&|\\|\\||[+\\-*/%=<>!]"
+        }
+      ]
+    }
+  }
+}

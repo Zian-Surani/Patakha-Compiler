@@ -1,0 +1,9 @@
+shuru
+bhai x = 1;
+{
+    bhai x = 2;
+    bol(x);
+}
+bol(x);
+nikal 0;
+bass

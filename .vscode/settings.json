@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.bhai": "patakha"
+  },
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}"
+  ],
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

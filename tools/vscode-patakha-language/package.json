@@ -1,0 +1,53 @@
+{
+  "name": "patakha-language",
+  "displayName": "Patakha Language",
+  "description": "Syntax highlighting, snippets, and language config for Patakha (.bhai)",
+  "version": "0.0.1",
+  "publisher": "patakha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/patakha"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "language-configuration.json",
+    "syntaxes/**",
+    "snippets/**"
+  ],
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "patakha",
+        "aliases": [
+          "Patakha"
+        ],
+        "extensions": [
+          ".bhai"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "patakha",
+        "scopeName": "source.bhai",
+        "path": "./syntaxes/bhai.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "patakha",
+        "path": "./snippets/bhai.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+struct User {
+    bhai age;
+    text name;
+};
+
+kaksha Box {
+    bhai w;
+    bhai h;
+};
+
+kaam bhai add(bhai a, bhai b) {
+    nikal max(a, b);
+}
+
+kaam khali touch(User u) {
+    bol(u.age);
+    nikal;
+}
+
+shuru
+bhai arr[5];
+arr[0] = 3;
+arr[1] = 7;
+User u;
+u.age = add(arr[0], arr[1]);
+u.name = "Ravi";
+bhai i = 0;
+bhai sum = 0;
+jabtak (i = 0; (i < len(arr)); i = (i + 1)) {
+    agar ((i == 3)) {
+        jari;
+    }
+    sum = (sum + i);
+    agar ((sum > 20)) {
+        tod;
+    }
+}
+kar {
+    sum = (sum - 1);
+} tabtak ((sum > 0));
+bol(u.age);
+bol(u.name);
+nikal 0;
+bass

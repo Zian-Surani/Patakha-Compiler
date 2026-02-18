@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install project
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Lint sample
+        run: python -m patakha lint examples/hello.bhai --strict
+
+      - name: Format check sample
+        run: python -m patakha fmt examples/hello.bhai --check
+
+      - name: Build C backend sample
+        run: python -m patakha examples/hello.bhai --backend c --gcc
+
+      - name: Run generated executable
+        run: ./examples/hello
+
+      - name: Build stack backend sample
+        run: python -m patakha examples/loop.bhai --backend stack
+
